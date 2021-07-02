@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="te.css">
+<title>Text Editor</title>
+</head>
+<body>
+
+<div class="shield" id="shield"></div>
+
+<div class="navbar">
+	<button id="html_btn" class="code-selection-btn">HTML</button>
+	<button id="css_btn" class="code-selection-btn">CSS</button>
+	<button id="js_btn" class="code-selection-btn">JavaScript</button>
+	<button id="run" class="run-btn">Run</button>
+</div>
+<div class="grid">
+<div class="window1" id="window1">
+	<table class="main-table">
+		<tr>
+			<td class="main-table-leftcell">
+			<table id="line-no-table" class="line-no-table"></table>
+			</td>
+			<td class="main-table-rightcell">
+			<table id="editor-table" class="editor-table">
+			<tr class="row"><td contenteditable>hisdasdafadffdfaf</td></tr>
+			<tr class="row"><td contenteditable>daasdasda</td></tr>
+			<tr class="row"><td contenteditable>fssgdfg</td></tr>
+			<tr class="row"><td contenteditable>hgdfgdgsdgsfs</td></tr>
+			<tr class="row"><td contenteditable>fgdfdffgsdgsd</td></tr>
+			</table>
+			</td>
+		<tr>
+	</table>
+	
+</div>
+<div class="window-seperator" id="seperator"></div>
+<div class="window2">
+	<iframe id="test_iframe" src="about:blank" width=400 height=400></iframe>
+</div>
+</div>
+
+<script src="iframe.js"></script>
+<script src="windowcontrol.js"></script>
+<script src="selection.js"></script>
+<script src="keys.js"></script>
+<script src="utils.js"></script>
+<script src="te.js"></script>
+
+</body>
+</html>
